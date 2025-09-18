@@ -151,7 +151,7 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
-.member img {     /* Profile pictures to be added */
+.member img {     /* Profile pictures are added */
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -236,6 +236,29 @@ body {
 {
   margin-right: 8px;
   accent-color: #2C4875;
+}
+
+/* Style for date picker and select menu */
+.booking select,
+.booking input[type="date"] {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #2C4875;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  appearance: none;       /* Removes default browser arrow for consistent look */
+}
+
+/* Focus states for date picker and select */
+.booking select:focus,
+.booking input[type="date"]:focus {
+  border-color: #2C4875;
+  box-shadow: 0 0 0 3px rgba(44,72,117,0.15);
+  outline: none;
 }
 
 .booking button {
