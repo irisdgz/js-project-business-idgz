@@ -151,7 +151,7 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
-.member img {
+.member img {     /* Profile pictures to be added */
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -179,7 +179,7 @@ body {
   font-size: 2rem;
 }
 
-/* The Form styles remain the same */
+/* no changes in the style of the form */
 .booking form {
   display: grid;
   grid-template-columns: 1fr;
@@ -256,7 +256,6 @@ body {
 }
 
 /* The Hamburger buttons */
-/* Hamburger button */
 .hamburger {
   display: none; /* hidden by default */
   flex-direction: column;
@@ -346,3 +345,18 @@ body {
       display: flex;
     }
   }
+ 
+  /* Footer */
+footer {
+  background-color: #2C4875;   
+  color: #ffffff;              
+  text-align: center;         
+  padding: 20px 10px;        
+  font-size: 0.9rem;          
+  margin-top: 40px;           
+}
+
+footer p {
+  margin: 0;                   
+  line-height: 1.4;
+}

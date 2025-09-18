@@ -9,10 +9,10 @@
 <body> 
   
   <!-- This is the nagvigation part --> 
-  <nav class="navbar">
+    <nav class="navbar"> 
     <div class="logo">Paw Pals 🐾</div>
 
-  <!-- Hamburger menu, yumyum -->
+  <!-- Hamburger menu, yumyum, add more options later? -->
     <button class="hamburger" aria-label="Toggle menu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -20,9 +20,9 @@
     </button>
    
     <ul class="nav-menu">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#signup">Sign Up</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+      <li><a href="#signup" class="nav-link">Sign Up</a></li>
     </ul>
   </nav>
 
@@ -48,16 +48,17 @@
   <section id="team" class="team">
     <h2>Meet Our Team</h2>
     <div class="profiles">
-      <div class="member"><img src="" alt="Lead Walker"><h4>CC</h4><p>Lead Walker</p></div>
-      <div class="member"><img src="" alt="Trainer"><h4>DD</h4><p>Trainer</p></div>
-      <div class="member"><img src="" alt="Groomer"><h4>EE</h4><p>Groomer</p></div>
+      <div class="member"><img src="images/Luke.jpg" alt="Lead Walker"><h4>Luke</h4><p>Lead Walker</p></div>
+      <div class="member"><img src="images/Alice.jpg" alt="Trainer"><h4>Alice</h4><p>Trainer</p></div>
+      <div class="member"><img src="images/Carin.jpg" alt="Groomer"><h4>Carin</h4><p>Groomer</p></div>
     </div>
   </section>
 
   <!-- The form Hamburger menu-->
   <section id="signup" class="booking">
-    <h2>Sign Up for Pawsome</h2>
+    <h2>Sign Up for Paw Pals</h2>
     <form action="https://httpbin.org/anything" method="POST">
+      
       <!-- Text fields -->
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
@@ -67,7 +68,7 @@
 
       <!-- Password -->
       <label for="password">Create Password</label>
-      <input type="password" id="password" name="password" placeholder="Choose a strong password" required>
+      <input type="password" id="password" name="password" placeholder="Choose a password" required>
 
       <!-- Radio buttons -->
       <fieldset>
@@ -88,10 +89,10 @@
     </form>
   </section>
   
-  <!-- Footer is it needed? -->
+  <!-- Footer is it needed -->
 
   <footer>
-    <p>© 2025 Pawsome. All rights reserved.</p>
+    <p>© 2025 Paw Pals. All rights reserved.</p>
   </footer>
 </body>
 </html>
