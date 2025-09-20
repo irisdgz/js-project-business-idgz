@@ -3,6 +3,7 @@ body {
   background-color: #F7F3F2;
   color: #2c3e50;
   margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
@@ -56,6 +57,7 @@ body {
   margin-bottom: 25px;
   text-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
 
 
 .btn-cta {
@@ -290,16 +292,8 @@ body {
   gap: 5px;
 }
 
-.hamburger span {
-  display: block;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Responsive layout desktop tablet */
-@media (max-width: 1024px) and (min-width: 769px) {
+/* Responsive layout desktop tablet and mobile */
+@media (max-width: 1024px) and (min-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -312,20 +306,32 @@ body {
   .profiles {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .grid {
     grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center ;
   }
 
   .navbar {
     flex-direction: column;
     gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
   }
 
   .nav-menu {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    width: auto;
+    background-color: transparent;
   }
 
   .booking form {
@@ -340,13 +346,22 @@ body {
 /*The hamburger menu for mobile*/
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* this is for only showing hamburger menu on mobile */
+    display: flex; /* show hamburger on mobile */
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto 0;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    z-index: 100; /* Ensure it's above other elements */
   }
-  .services, .team, .booking {
-    padding: 50px 5%;
-  }
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
-
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -355,18 +370,21 @@ body {
 }
 
   .nav-menu {
-    display: none; /* hidden by default */
+    display: none; /* hidden until acvtived */
     flex-direction: column;
     gap: 15px;
     width: 100%;
     background-color: #2C4875;
-    position: absolute; /* fixed typo! */
-    top: 60px;
     left: 0;
+    position: absolute;
+    top: 60px;
     padding: 15px 0;
     z-index: 99;
-  }
-
+ 
+    /* center items after clicking the menu*/
+    align-items: center;      /* horizontal centering in column layout */
+    text-align: center;       /* ensures text inside links is centered */
+ }
     .nav-menu.active {
       display: flex;
     }
